@@ -1,0 +1,25 @@
+
+body {
+    margin: 50px;
+    background-color: gray;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(184, 17, 184);
+    padding-bottom: 50px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+ #headers {
+     text-align: center;
+ }
+
+ul {
+    text-align: center;
+    list-style: inside;
+}
+
