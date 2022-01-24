@@ -2,6 +2,7 @@
 body {
     margin: 50px;
     background-color: gray;
+    color: purple;
 }
 
 .main-container {
@@ -53,6 +54,34 @@ button {
 
 #msgCenter {
     font-size: x-large;
+}
 
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(17, 184, 184);
+    padding: 0.5em;
+    font-family: 'Open Sans', sans-serif;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+.soc-med {
+    padding-left: 100px;
+    display: inline-block;
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 50px;
+    color: black;
+}
+
+a {
+    text-decoration: none;
 }
 
