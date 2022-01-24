@@ -1,12 +1,4 @@
-/* 
 
-Write your guess-game code here! Don't forget to look at the test specs as a guide. You can run the specs
-by running "npm test".
-
-In this file, you will also include the event listeners that are needed to interact with your HTML file when
-a user clicks a button or adds a guess to the input field.
-
-*/
 function generateWinningNumber() {
   let winner = Math.floor(Math.random() * 100) + 1;
   console.log(winner);
@@ -71,7 +63,7 @@ class Game {
     }
     else {
       this.pastGuesses.push(this.playerGuess);
-      if(this.pastGuesses.length === 5) {
+      if(this.pastGuesses.length === 6) {
         resultMsg = `Nice try. The answer was ${this.winner}`;
       } else {
         let numGap = this.AbsDifference();
@@ -79,13 +71,13 @@ class Game {
         resultMsg = "Your guess, so hot right now!";
       }
       else if (numGap < 25) {
-        resultMsg = "Someone turn on the AC, it's getting hot in here!";
+        resultMsg = "Someone turn on the AC, it's getting hot in here! Guess a little higher.";
       }
       else if (numGap < 50) {
-        resultMsg = "Gonna go get my parka, getting getting cold in here.";
+        resultMsg = "Gonna go get my parka, getting getting cold in here. Guess higher.";
       }
       else {
-        resultMsg = "Frozen like Walt Disney.";
+        resultMsg = "Frozen like Walt Disney! Guess much higher.";
       }
     }
   }    
@@ -108,8 +100,18 @@ function playGame() {
   submitBtn.addEventListener("click", function(){
     const playerGuess = document.getElementById("player-input").value;
     game.playerGuessSubmission(playerGuess);
+    document.getElementById("player-input").value = "";
   });
 }
+
+// Hint function to include winning number and two random, could not get it to pull the 
+// winning number into the array
+
+function provideHint() {
+  return shuffle([this.winner, generateWinningNumber(), generateWinningNumber()]);
+}
+console.log(provideHint());
+
 
 // Reset game function will reload window and clear any data from previous game
 const resetBtn = document.getElementById("reset");

@@ -9,9 +9,11 @@ body {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    background-color: rgb(184, 17, 184);
+    background-color: rgb(17, 184, 184);
     padding-bottom: 50px;
     font-family: 'Open Sans', sans-serif;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px black;
 }
 
  #headers {
@@ -20,6 +22,37 @@ body {
 
 ul {
     text-align: center;
-    list-style: inside;
+    list-style: none;
+    margin-right: 85px;
+}
+
+.guess {
+    display: inline;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 10%;
+    padding: 5px 15px;
+    margin: 0 10px;
+}
+
+input {
+    border-radius: 10px;
+    text-align: center;
+}
+
+button {
+    border-radius: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+}
+
+#menu-btns {
+    padding-right: 60px;
+    padding-bottom: 25px;
+}
+
+#msgCenter {
+    font-size: x-large;
+
 }
 
