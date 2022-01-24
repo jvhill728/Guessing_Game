@@ -14,7 +14,7 @@ body {
     padding-bottom: 50px;
     font-family: 'Open Sans', sans-serif;
     border-radius: 10px;
-    box-shadow: 10px 5px 5px black;
+    box-shadow: 10px 5px 5px purple;
 }
 
  #headers {
@@ -25,6 +25,8 @@ ul {
     text-align: center;
     list-style: none;
     margin-right: 85px;
+    padding-left: 75px;
+    padding-bottom: 25px;
 }
 
 .guess {
@@ -41,6 +43,10 @@ input {
     text-align: center;
 }
 
+#input-user {
+    padding-bottom: 25px;
+}
+
 button {
     border-radius: 10px;
     font-family: 'Open Sans', sans-serif;
@@ -48,7 +54,7 @@ button {
 }
 
 #menu-btns {
-    padding-right: 60px;
+    padding-right: 35px;
     padding-bottom: 25px;
 }
 
